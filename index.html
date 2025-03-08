@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Page Title</title>
+        
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="trekking.css">
+        
+        <!-- JavaScript Link -->
+        <script src="trekking.js"></script>
+    </head>
+    <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>Summit Seekers</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#treks">Our Treks</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover the World's Most Breathtaking Peaks</h1>
+            <p>Professional guided mountain hiking and trekking adventures for all experience levels</p>
+            <a href="#treks" class="btn btn-primary">Explore Treks</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Summit Seekers</h2>
+                <p>Your Trusted Mountain Adventure Partner Since 2010</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Summit Seekers is a premier mountain trekking company dedicated to providing unforgettable alpine adventures around the world. With over 15 years of experience, our team of certified mountain guides ensures both safety and excitement on every journey.</p>
+                    <p>Whether you're a beginner looking for your first mountain experience or a seasoned trekker seeking new challenges, we have the perfect trek for you. Our passion for mountains and commitment to sustainable tourism make us the ideal choice for your next adventure.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Successful Expeditions</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>25+</h3>
+                        <p>Mountain Destinations</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10,000+</h3>
+                        <p>Happy Trekkers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Amenities -->
+    <section class="amenities">
+        <div class="container">
+            <div class="section-title">
+                <h2>What We Provide</h2>
+                <p>Premium Services for Every Trek</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Expert Guides</h3>
+                    <p>Certified mountain guides with extensive local knowledge and emergency training</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Gourmet Meals</h3>
+                    <p>Nutritious and delicious meals prepared fresh daily by our trek chefs</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-campground"></i>
+                    <h3>Quality Camping</h3>
+                    <p>Premium camping gear and comfortable accommodations throughout your journey</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-first-aid"></i>
+                    <h3>Safety Equipment</h3>
+                    <p>First-aid kits, oxygen supplies, and emergency communication devices</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Transport</h3>
+                    <p>All transportation from arrival to departure points included</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photo Package</h3>
+                    <p>Professional photos of your trek adventure available as an add-on</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treks Section -->
+    <section id="treks" class="treks">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Trekking Adventures</h2>
+                <p>Find Your Perfect Mountain Experience</p>
+            </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Treks</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+            <div class="treks-grid" id="treksGrid">
+                <!-- Trek cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Trekkers Say</h2>
+                <p>Experiences From Fellow Adventurers</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Summit Seekers made my first mountain trek an unforgettable experience. The guides were knowledgeable and supportive, and the views were breathtaking. I'll definitely book with them again!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://www.acethehimalaya.com/wp-content/uploads/2022/08/everest-base-camp-kalapatthar-600x450.jpg" alt="Testimonial Avatar">
+                        <div>
+                            <h4>Rahul rawat</h4>
+                            <p>Everest Base Camp Trek</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The attention to detail on our Kilimanjaro trek was impressive. From the quality of food to the expertise of guides, everything exceeded our expectations. Worth every penny!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="data:image/jpeg;base64,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" alt="Testimonial Avatar">
+                        <div>
+                            <h4>Gaurav Singh</h4>
+                            <p>Kilimanjaro Summit Trek</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As an experienced trekker, I was looking for a company that could provide a challenging yet safe adventure. Summit Seekers delivered exactly that with their Advanced Alps Trek. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7k30U1of3RAzZq321-G1n1Mp8fRAqrnl_g&s" alt="Testimonial Avatar">
+                        <div>
+                            <h4>Juned Bag Mirza</h4>
+                            <p>Advanced Alps Trek</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>We're Here To Help With Your Adventure Plans</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Office</h3>
+                            <p> C21 Business Park, Vijay Nagar, Indore(452001)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 8319855776</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>jayeshtyagi29@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+               <!-- Contact Section with Google Form Integration -->
+<section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Book Your Trek</h2>
+        <p>Complete the form below to start planning your adventure. Our team will contact you within 24 hours.</p>
+      </div>
+      
+      <div class="contact-container">
+        <!-- Google Form Embed -->
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSej-SYGUVKpBphTxq9sbwqdsyNJE5LeUslwh4Dz7ZcA4JnpRg/viewform?embedded=true" 
+          width="100%" 
+          height="800" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0">
+          Loading...
+        </iframe>
+      </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Modal -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Need Help?</h2>
+            <div class="help-sections">
+                <div class="help-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>What fitness level do I need for your treks?</h4>
+                        <p>Our treks range from beginner to advanced. Each trek listing includes specific fitness requirements. Generally, even for beginner treks, we recommend being able to walk 5-7 miles with some elevation gain.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What equipment do I need to bring?</h4>
+                        <p>We provide a detailed packing list after booking. We supply camping equipment, but you'll need personal items like appropriate clothing, hiking boots, and a daypack.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How large are your trekking groups?</h4>
+                        <p>Our groups typically range from 6-12 people to ensure quality experience and minimize environmental impact.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What's your cancellation policy?</h4>
+                        <p>Full refund if canceled 60+ days before departure, 50% refund if 30-59 days, no refund if less than 30 days. Trip insurance is highly recommended.</p>
+                    </div>
+                </div>
+                <div class="help-section">
+                    <h3>Booking Assistance</h3>
+                    <p>Need help with your booking? Our adventure consultants are available:</p>
+                    <p><strong>Phone:</strong> +91 8319855776</p>
+                    <p><strong>Hours:</strong> Monday-Friday, 9am-6pm PT</p>
+                    <p><strong>Email:</strong> jayeshtyagi29@gmail.com</p>
+                </div>
+                <div class="help-section">
+                    <h3>Emergency Contact</h3>
+                    <p>For urgent matters related to current treks:</p>
+                    <p><strong>24/7 Emergency Line:</strong> +91 9201036400</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trek Details Modal -->
+    <div id="trekDetailModal" class="modal">
+        <div class="modal-content trek-detail-content">
+            <span class="close-modal">&times;</span>
+            <div id="trekDetailContent">
+                <!-- Trek details will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Summit Seekers</h2>
+                    <p>Your Mountain Adventure Specialists</p>
+                    <p>Futher Adding More routes. </p>
+                    <p>Stay Connected With Us !</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#treks">Our Treks</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#" id="helpBtn">Help Center</a></li>
+                            <li><a href="#">Trekking Guide</a></li>
+                            <li><a href="#">Packing Lists</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                            <li><a href="#">Insurance Requirements</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Summit Seekers. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
